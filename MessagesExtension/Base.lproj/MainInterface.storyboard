@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfd-yM-tVS">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rfd-yM-tVS" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="DN1-sJ-qC5"/>
+                            <constraint firstItem="Rfd-yM-tVS" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="dBR-YZ-VdA"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Secret Message Compact View Controller-->
+        <scene sceneID="LPC-Cb-G0P">
+            <objects>
+                <viewController storyboardIdentifier="SecretMessageCompactViewController" id="ty4-Rl-WsT" customClass="SecretMessageCompactViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sn2-ra-PRT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ye1-OQ-CJc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9aG-uL-m0A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-qT-nHW">
+                                <state key="normal" title="Create New Secret Message"/>
+                                <connections>
+                                    <action selector="createNewSecretMessageButtonPressed:" destination="ty4-Rl-WsT" eventType="touchUpInside" id="VRA-Xv-wjw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.2890362836" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LCv-qT-nHW" firstAttribute="centerX" secondItem="9aG-uL-m0A" secondAttribute="centerX" id="Kg0-3L-bu9"/>
+                            <constraint firstItem="LCv-qT-nHW" firstAttribute="centerY" secondItem="9aG-uL-m0A" secondAttribute="centerY" id="eqY-gE-T5Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSs-9N-tZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="38"/>
+        </scene>
+        <!--Create Secret Message View Controller-->
+        <scene sceneID="RPG-Mf-EWq">
+            <objects>
+                <viewController storyboardIdentifier="CreateSecretMessageViewController" id="xZ0-7v-pR5" customClass="CreateSecretMessageViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TIh-aH-w4L"/>
+                        <viewControllerLayoutGuide type="bottom" id="cj4-wv-qYC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xsp-u1-TJP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ocB-9S-bfZ">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iR-5c-QDi">
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="createSecretMessageButtonPressed:" destination="xZ0-7v-pR5" eventType="touchUpInside" id="Fdh-MJ-gkn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.33333333329999998" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ocB-9S-bfZ" firstAttribute="top" secondItem="TIh-aH-w4L" secondAttribute="bottom" constant="8" symbolic="YES" id="6hV-d3-wKd"/>
+                            <constraint firstItem="ocB-9S-bfZ" firstAttribute="trailing" secondItem="xsp-u1-TJP" secondAttribute="trailingMargin" id="EjL-le-lKE"/>
+                            <constraint firstItem="3iR-5c-QDi" firstAttribute="centerX" secondItem="ocB-9S-bfZ" secondAttribute="centerX" id="bdZ-vq-Uku"/>
+                            <constraint firstItem="3iR-5c-QDi" firstAttribute="top" secondItem="ocB-9S-bfZ" secondAttribute="bottom" constant="8" symbolic="YES" id="i7I-GI-LaG"/>
+                            <constraint firstItem="ocB-9S-bfZ" firstAttribute="leading" secondItem="xsp-u1-TJP" secondAttribute="leadingMargin" id="qKi-BL-WdX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="secretMessageTextField" destination="ocB-9S-bfZ" id="ssq-nu-57q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rur-Zg-o33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="37"/>
+        </scene>
+    </scenes>
+</document>
